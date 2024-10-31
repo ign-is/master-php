@@ -82,6 +82,31 @@ if ($day == 1) {
 
 echo '<hr/>';
 
+// Switch
+$day = 6;
+
+switch ($day) {
+    case 1:
+        echo 'Monday';
+        break;
+    case 2:
+        echo 'Tuesday';
+        break;
+    case 3:
+        echo 'Wednesday';
+        break;
+    case 4:
+        echo 'Thursday';
+        break;
+    case 5:
+        echo 'Friday';
+        break;
+    default:
+        echo 'It is Weekend';
+}
+
+echo '<hr/>';
+
 // Example 5
 $age1 = 18;
 $age2 = 64;
@@ -101,6 +126,19 @@ if ($country == 'Mexico' || $country == 'Spain' || $country == 'Colombia') {
 } else {
     echo 'Spanish is not spoken';
 }
+
+echo '<br>';
+
+// GOTO
+goto execute_this;
+echo "<h3>Instruction 1</h3>";
+echo "<h3>Instruction 2</h3>";
+echo "<h3>Instruction 3</h3>";
+echo "<h3>Instruction 4</h3>";
+
+execute_this: 
+echo "<h1>I have jumped 4 echoes</h1>"
+  
 
 
 ?>
