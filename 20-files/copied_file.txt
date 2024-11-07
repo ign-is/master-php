@@ -1,0 +1,3 @@
+Hi I'm a text file 22
+How are you?
+Fine and you?I'm text entered from PHP
