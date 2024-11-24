@@ -23,9 +23,13 @@ SELECT * FROM categorias WHERE
 
 
 #Mostrar los usuarios que crearon una entrada un martes#
-
+SELECT * FROM usuarios WHERE id IN 
+       (SELECT usuario_id FROM entradas WHERE DAYOFWEEK(fecha)=3);
 
 #Mostrar el nombre del usuario que tenga mas entradas#
-
+SELECT CONCAT(nombre,' ',apellidos) AS 'El usuario con mas entradas' FROM usuarios WHERE id =
+    (SELECT usuario_id FROM entradas GROUP BY usuario_id ORDER BY COUNT(id) DESC LIMIT 1);
 
 #Mostrar las categorias sin entradas#
+SELECT * FROM categorias WHERE id 
+        NOT IN (SELECT categoria_id FROM entradas);
