@@ -22,3 +22,7 @@ WHERE e.categoria_id = c.id GROUP BY e.categoria_id;
 SELECT c.nombre, COUNT(e.id) FROM categorias c
 LEFT JOIN entradas e ON e.categoria_id = c.id
 GROUP BY e.categoria_id;
+
+SELECT c.nombre, COUNT(e.id) FROM entradas e
+RIGHT JOIN categorias c ON e.categoria_id = c.id
+GROUP BY e.categoria_id;
