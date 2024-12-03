@@ -13,3 +13,10 @@ precio   int(20) not null,
 stock    int(255) not null,
 CONSTRAINT pk_coches PRIMARY KEY(id)
 )ENGINE=InnoDB;
+
+CREATE TABLE grupos(
+id       int(10) auto_increment not null,
+nombre   varchar(100) not null,
+ciudad   varchar(100),
+CONSTRAINT pk_grupos PRIMARY KEY(id)
+)ENGINE=InnoDB;
