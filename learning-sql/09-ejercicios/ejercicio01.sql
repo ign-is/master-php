@@ -20,3 +20,18 @@ nombre   varchar(100) not null,
 ciudad   varchar(100),
 CONSTRAINT pk_grupos PRIMARY KEY(id)
 )ENGINE=InnoDB;
+
+CREATE TABLE vendedores(
+id          int(10) auto_increment not null,  
+grupo_id    int(10) not null,
+jefe        int(10),
+nombre      varchar(100) not null,
+apellidos   varchar(150),
+cargo       varchar(50),
+fecha       date,
+sueldo      float(20,2),
+comision    float(10,2),
+CONSTRAINT pk_vendedores PRIMARY KEY(id),
+CONSTRAINT fk_vendedor_grupo FOREIGN KEY(grupo_id) REFERENCES grupos(id),
+CONSTRAINT fk_vendedor_jefe FOREIGN KEY(jefe) REFERENCES vendedores(id)
+)ENGINE=InnoDB;
