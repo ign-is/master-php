@@ -57,3 +57,13 @@ CONSTRAINT pk_encargos PRIMARY KEY(id),
 CONSTRAINT fk_encargo_cliente FOREIGN KEY(cliente_id) REFERENCES clientes(id),
 CONSTRAINT fk_encargo_coche FOREIGN KEY(coche_id) REFERENCES coches(id)
 )ENGINE=InnoDB;
+
+#RELLENAR LA BASE DE DATOS CON INFORMAION - INSERTS#
+
+#COCHES
+INSERT INTO coches VALUES(NULL, 'Renault Clio', 'Renault', 12000, 13);
+INSERT INTO coches VALUES(NULL, 'Seat Panda', 'Seat', 10000, 10);
+INSERT INTO coches VALUES(NULL, 'Mercedes Ranchera', 'Mercedes Benz', 32000, 24);
+INSERT INTO coches VALUES(NULL, 'Porche Cayene', 'Porche', 65000, 5);
+INSERT INTO coches VALUES(NULL, 'Lambo Aventador', 'Lamborgini', 170000, 2);
+INSERT INTO coches VALUES(NULL, 'Ferrari Spider', 'Ferrari', 245000, 80);
