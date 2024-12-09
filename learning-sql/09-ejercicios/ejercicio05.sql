@@ -1,0 +1,1 @@
+SELECT nombre, DATEDIFF(CURDATE(), fecha) AS 'DIAS' FROM vendedores;
