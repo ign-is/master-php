@@ -1,0 +1,1 @@
+SELECT CONCAT(nombre, ' ', apellidos) AS 'NOMBRE COMPLETO', fecha, DAYNAME(fecha) AS 'DIA' FROM vendedores;
