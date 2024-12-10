@@ -1,0 +1,1 @@
+SELECT * FROM coches WHERE marca LIKE '%A%' AND modelo LIKE 'F%';
