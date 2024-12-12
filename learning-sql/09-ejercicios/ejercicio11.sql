@@ -1,0 +1,1 @@
+SELECT cargo, COUNT(id) FROM vendedores GROUP BY cargo;
